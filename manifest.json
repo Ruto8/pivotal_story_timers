@@ -1,0 +1,16 @@
+{
+ "name": "Pivotal Story Timers",
+ "content_scripts": [
+   {
+     "matches": ["https://www.pivotaltracker.com/n/projects/*"],
+     "js": ["main.js"]
+   }
+ ],
+  "version": "0.0.1",
+  "description": "Display story cycle time in Pivotal",
+  "manifest_version": 2,
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html"
+}
